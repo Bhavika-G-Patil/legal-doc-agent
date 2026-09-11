@@ -1,0 +1,14 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2026-09-11 19:21:14.832 Could not bind IPv6 wildcard address :::8955; falling back to 0.0.0.0:8955.
+2026-09-11 19:21:14.866 Uvicorn server started on 0.0.0.0:8955
+2026-09-11 19:21:14.959 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8955
+  Network URL: http://192.0.2.2:8955
+
+  Stopping...
