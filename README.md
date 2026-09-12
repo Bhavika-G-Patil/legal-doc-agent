@@ -135,11 +135,6 @@ flowchart TD
   been tested against a version of the document containing extra optional
   sections beyond `schema.py`'s list.
 
-## AI coding assistant use
-
-This project — the pipeline design, all source files, the Streamlit UI, and
-this README — was built with Claude (Anthropic) as an AI coding assistant,
-based on the supplied assignment brief and reference materials.
 
 ## Deploying (for the working link)
 
