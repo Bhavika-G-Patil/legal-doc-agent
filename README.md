@@ -61,8 +61,7 @@ CLI output goes to `outputs/generated_affidavit.docx` and
 
 ## Working link
 
-`<ADD YOUR DEPLOYED LINK HERE — see "Deploying" below>`
-
+https://legal-doc-agent-halr4otddgtlwejrgukodn.streamlit.app
 ## Video link
 
 `<ADD YOUR LOOM / DRIVE LINK HERE>`
