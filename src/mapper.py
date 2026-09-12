@@ -59,25 +59,30 @@ def _blanket_denial_paragraph(ce: CaseEntities, point: ReplyPoint) -> str:
 
 def _preliminary_position_paragraph(ce: CaseEntities, point: ReplyPoint) -> str:
     bullets = " ".join(point.bullets)
-    return (
-        f"I say that {bullets[0].lower() + bullets[1:] if bullets else ''} "
-        f"The action complained of has been taken strictly in accordance with "
-        f"law and after following due procedure. No legal, constitutional or "
-        f"fundamental right of the Petitioner has been infringed."
-    ).replace("  ", " ")
 
+    return (
+        f"I say that the Petitioner has suppressed material facts. "
+        f"{bullets[0].upper() + bullets[1:] if bullets else ''} "
+        f"The action complained of has been taken strictly in accordance with "
+        f"law and after following due procedure. "
+        f"No legal, constitutional or fundamental right of the Petitioner "
+        f"has been infringed."
+    ).replace("  ", " ")
 
 def _substantive_answer_paragraph(ce: CaseEntities, point: ReplyPoint) -> str:
     body = " ".join(point.bullets)
+
     text = (
-        f"With reference to the averments made in the {ce.proceeding_type} "
-        f"regarding {point.title.lower()}, I say that {body[0].lower() + body[1:]}"
+        f"With reference to the averments made in the Petition, "
+        f"I say that {body[0].lower() + body[1:] if body else ''}"
     )
+
     if point.exhibit:
         text += (
             f" Hereto annexed and marked as EXHIBIT-'{point.exhibit}' is a true "
             f"copy of the said communication."
         )
+
     return text
 
 
