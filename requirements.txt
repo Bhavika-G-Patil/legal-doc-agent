@@ -3,3 +3,4 @@ streamlit>=1.38.0
 anthropic>=0.34.2
 
 openai
+python-dotenv>=1.0.1
